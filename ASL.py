@@ -48,6 +48,7 @@ try:
         file = BytesIO(urlopen(image_url).read())
         img = file
         label, pred = predict_image(img)
+        st.header('The image is:')
         st.header(label)
         
 except:
