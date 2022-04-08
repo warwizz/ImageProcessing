@@ -42,7 +42,7 @@ st.markdown("""
 
 st.subheader("Paste the link for identifying the ASL Language")
 image_url = st.text_input("Please use JPG or JPEG image for better prediction")
-
+st.write("Using Kaggle dataset provides better result because of the variance of the dataset")
 try:
     if st.button("Classify the image"):
         file = BytesIO(urlopen(image_url).read())
