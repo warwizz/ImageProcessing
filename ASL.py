@@ -10,7 +10,7 @@ from io import BytesIO
 from urllib.request import urlopen
 from PIL import Image
 
-model = tf.keras.models.load_weights("model_asl_weights.h5")
+model = tf.keras.models.load_model("model_asl.h5")
 
 label = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
        'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
